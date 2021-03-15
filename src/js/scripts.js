@@ -25,6 +25,6 @@ form.addEventListener('submit', (e) =>{
             form.email.classList.remove('form__input--error')
             form.submit.classList.remove('form__button--error')
             errorMessage.remove()
-        }, 2800)
+        }, 3000)
     }
 })

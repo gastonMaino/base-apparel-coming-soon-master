@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) =>{
     const email = form.email.value
     const errorMessage = document.createElement('p')
 
-    if(!validateEmail(email)){
+    if(!validateEmail(email) && !form.lastElementChild.classList.contains('form--error')){
         errorMessage.classList.add('form--error')
         errorMessage.textContent = 'Please provide a valid email'
 
